@@ -1,0 +1,63 @@
+<html ng-app="angApp">
+<head >
+	<meta charset="UTF-8">
+	<title>angular test</title>
+
+	 
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-hero.min.css">
+	<style type="text/css">
+		.brd {
+			border: solid thin;
+		}
+	</style>
+
+</head>
+<body>
+
+
+	<div class="container" ng-controller="FirstCtrl as first">
+
+		<h1>Marvin's Portfolio</h1>
+
+		<h2>Angular App</h2>
+		<table class = "table table-striped">
+			<tr>
+				<th ng-repeat="i in first.items"><img src="{{i.image}}"</th>
+			</tr>
+			<tr>
+				<td ng-repeat="i in first.items">{{i.car_model}}</td>
+			</tr>
+			<tr>
+				<td ng-repeat="i in first.items">{{i.age}}</td>
+			</tr>
+		</table>
+
+		<!--
+		<ul class="list-group">
+	
+			<li class="list-group-item brd" 
+				ng-repeat="i in first.items">{{i.student_name + " " + i.age + " " + i.title}}
+			</li>
+		</ul>
+		-->
+
+		
+
+	</div>
+<!--
+	<div class="container" ng-controller="skillsCtrl as viewmodel">
+		<skills-dir></skills-dir>
+	</div>
+
+-->
+
+	<script src="https://code.jquery.com/jquery-2.2.2.js"   integrity="sha256-4/zUCqiq0kqxhZIyp4G0Gk+AOtCJsY1TA00k5ClsZYE="   crossorigin="anonymous"></script>  
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script src="bower_components/angular/angular.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+  <script type="text/javascript" src="data/data.json"></script>
+  <script type="text/javascript" src="data/resumeData.json"></script>
+  <script type="text/javascript" src="feature/skills_accordion.js"></script>
+</body>
+</html>

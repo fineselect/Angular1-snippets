@@ -1,0 +1,9 @@
+[{
+  "car_model": "Fusion",
+  "age": 38, 
+  "image" : "img/ford-fusion.jpg"
+}, {
+  "car_model": "Cassandra",
+  "age": 39,
+  "image" : "img/ford-fusion.jpg"
+}]

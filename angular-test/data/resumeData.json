@@ -1,0 +1,16 @@
+// resumeData.json
+
+[
+	{
+		"lang" : "HTML5", "level" : "expert", "yrs" : "10", "framew" : "Jade"
+	},
+	{
+		"lang" : "CSS", "level" : "expert", "yrs" : "10", "framew" : "Bootstrap"
+	},
+	{
+		"lang" : "JavaScript", "level" : "expert", "yrs" : "10", "framew" : "AngularJS"
+	},
+	{
+		"tech" : "M.E.A.N Stack", "techs" : ["MongoDB", "Express.js", "AngularJS", "Node.js"]
+	}
+]
