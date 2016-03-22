@@ -1,14 +1,15 @@
 <!-- 
-	App: 
-	File:
-	Author: ML
-	License:
-	Languages:
-	Frameworks: 
-	Date: 
+  App: 
+  File:
+  Author: ML
+  License:
+  Languages:
+  Frameworks: 
+  Date: 
 -->
 
 <div class="container" ng-controller="FirstCtrl as first">
+<<<<<<< HEAD
 	<ul class="list-group">
 		<li class="list-group-item brd" 
 			ng-repeat="i in first.items">{{i.student_name + " " 
@@ -16,23 +17,43 @@
 		</li>
 	</ul>
 </div>
+=======
+    <ul class="list-group">
+      <li class="list-group-item brd" 
+      	ng-repeat="i in first.items">{{i.student_name + " " + i.age}}
+      </li>
+    </ul>
+  </div>
+>>>>>>> origin/master
 
 <!-- 
+
+-----------------------------------------------------------
+
 **** JavaScript corresponding code ****
 
 (function angApp() {
-	"use strict";
-	angular
-		.module('angApp', ['skillsMod'])
-			.controller("FirstCtrl", 
-				['$http', function($http)
-			{
-				var vm = this;
+  "use strict";
+  angular
+    .module('angApp', ['skillsMod'])
+    .controller("FirstCtrl", ['$http', function($http) {
+      var vm = this;
+      $http.get('data/data.json').success(
+        function(data) {
+          vm.items = data;
+        })
+    }]);
+})();
+-----------------------------------------------------------
 
-				$http.get('data/data.json').success(
-					function(data){
-						vm.items = data;
-			})
-		}]);
-	})();
+*** JSON corresponding code **** 
+
+[{
+  "student_name": "Marvin",
+  "age": 38
+}, {
+  "student_name": "Cassandra",
+  "age": 39
+}]
+
 -->
